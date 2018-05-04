@@ -7,7 +7,7 @@ student::student()
 {
   first = " ";
   last = " ";
-  grades[0] = 0;
+  grades.push_back(0);
 }
 
 void student::setName(std::string &firstName, std::string &lastName)
@@ -32,14 +32,13 @@ void student::addGrade(double grade)
 
 double student::getScore()
 {
-  
   double gradeSum;
   double gradeAverage;
   for(int i = 0; i < grades.size(); i++)
   {
     gradeSum += grades[i];
   }
-  gradeAverage = gradeSum / grades.size() - 1;
+  gradeAverage = gradeSum / grades.size();
   return gradeAverage;
 }
 
