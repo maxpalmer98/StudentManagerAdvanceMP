@@ -7,8 +7,8 @@ student::student()
 {
   first = " ";
   last = " ";
-  grades.resize(0);
-  grades[0] = 0;
+  grades.resize(1);
+  grades[0] = 1;
 }
 
 void student::setName(std::string &firstName, std::string &lastName)
