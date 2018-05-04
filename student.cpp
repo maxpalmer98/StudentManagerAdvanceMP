@@ -7,7 +7,6 @@ student::student()
 {
   first = " ";
   last = " ";
-  grades.resize(1);
   grades[0] = 0;
 }
 
